@@ -5,12 +5,10 @@ import yfinance as yf
 
 class Analytic:
 #РАБОТА СО stocker
-#comp_name = input('Введите название компании: ')
 
     def prediction(self):
         st = stocker.predict.tomorrow(self, years=1)
-        return f'Предположительная стоимость акции {self} на {st[2]} составляет {st[0]}'
-
+        return f'Предположительная стоимость акции {self} на {st[2]} составляет: {st[0]}'
 
     #РАБОТА С Yahoo Finance
     def info1(self):

@@ -1,78 +1,12 @@
 {% load static %}
 <!DOCTYPE html>
-<html style="font-size: 16px;">
+<html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
-    <meta name="keywords" content="Holly Meyer, School of Art, Our Speakers, School of Art, Our Lectures, Masters of Fine Arts, Our Partners, Contact Us, INTUITIVE">
-    <meta name="description" content="">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Главная</title>
     <link rel="stylesheet" href="{% static "css/style.css" %}" />
     <title>Информация об эмитентах</title>
-    <meta name="generator" content="Nicepage 3.30.2, nicepage.com">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "Site1"
-}</script>
-    <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Главная">
-    <meta property="og:description" content="">
-    <meta property="og:type" content="website"
 </head>
-<body data-home-page="Главная.html" data-home-page-title="Главная" class="u-body"><header class="u-clearfix u-header u-palette-1-base u-header" id="sec-ff31"><div class="u-clearfix u-image u-sheet u-image-1" data-image-width="1440" data-image-height="900">
-        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
-          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
-            <a class="u-button-style u-custom-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
-              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
-</symbol>
-</defs></svg>
-            </a>
-          </div>
-          <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-hover-palette-1-light-2 u-nav-link u-palette-1-dark-1 u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 10px 20px;">Главная</a>
-</li><li class="u-nav-item"><a class="u-button-style u-hover-palette-1-light-2 u-nav-link u-palette-1-dark-1 u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 10px 20px;">Анализ инвестиций</a>
-</li><li class="u-nav-item"><a class="u-button-style u-hover-palette-1-light-2 u-nav-link u-palette-1-dark-1 u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 10px 20px;">Рекомендации</a>
-</li></ul>
-          </div>
-          <div class="u-custom-menu u-nav-container-collapse">
-            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-inner-container-layout u-sidenav-overflow">
-                <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#" style="padding: 10px 20px;">Главная</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#" style="padding: 10px 20px;">Анализ инвестиций</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#" style="padding: 10px 20px;">Рекомендации</a>
-</li></ul>#478ac9 !important;
-              </div>
-            </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-          </div>
-        </nav>
-        <h1 class="u-text u-text-default u-text-1">
-          <span class="u-text-body-alt-color">Аналитика&nbsp;<br>финансового инструмента
-          </span>
-        </h1>
-        <ul class="u-text u-text-default u-text-2">
-          <li>
-            <span style="font-size: 1.25rem;" class="u-text-palette-1-light-3">сервис оценит рискованность инструмента</span>
-          </li>
-          <li>
-            <span class="u-text-palette-1-light-3">
-              <span style="font-size: 1.25rem;">даст
-рекомендации по покупке или п​родаже</span>.
-            </span>.
-          </li>
-        </ul>
-      </div></header>
-    <section class="u-clearfix u-palette-1-base u-section-1" id="carousel_e798">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-text u-title u-text-1">Анализ инвестиций</h1>
-        <h4 class="u-text u-text-2">Для анализа введите название компании:</h4>
-        <div class="u-form u-form-1">
-
+<body>
     <form method="POST">
       {% csrf_token %}
         <table>
@@ -80,64 +14,5 @@
         </table>
     </form>
     <input type="button" value="Найти">
-     </div>
-        <p class="u-text u-text-3">Вы сможете узнать на чем заработать звтра и как не лишиться всего сегодня.<br>Всесторонний анализ акции и ее
-эмитента<br>Необходимая для покупки/продажи
-информация
-        </p>
-      </div>
-    </section>
-<section class="u-align-left u-clearfix u-gradient u-section-3" id="sec-f9c9">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <div class="fr-view u-clearfix u-rich-text u-text u-text-1">
-          <h1 class="u-text u-title u-text-1">Рекомендации</h1>
-          <p style="text-align: left;">
-            <span style="line-height: 2.0;">Для начала можно выбрать отрасль, в которую вам хотелось бы вложиться.  Если вы уже собираете инвестиционные портфель, то лучше выбрать несколько секторов, а не один.
-
-
-<img width="570" align="center" style="width: 382px;" class="fr-dii fr-fic fr-fir" src="images/graf.jpg">Так вы сможете защитить свои вложения, если в одной из отраслей экономики что-то пойдет не так. &nbsp;
-            </span>
-          </p>
-          <h2 style="text-align: left;">
-
-          </h2>
-          <p style="text-align: left;">
-              <span style="line-height: 2.0;"><b>При выборе компании для инвестиций,стоит обртить внимание на:</b> <ul><li>Финансовое состояние компании</li>Это выручка, чистая прибыль, EBITDA, капитал.
-
-                  <br><li>Платит ли компания дивиденды.</li> Если да — то сколько.
-
-                  <br><li>Ликвидность</li>Это то, насколько быстро вы можете купить или продать акцию компании по рыночной цене.Ликвидность бывает высокая, средняя и низкая. Чем выше — тем лучше.
-
-
-<br><li>Потенциал роста акций</li>Если планируете зарабатывать не только на дивидендах, стоит обратить внимание на цену акций и потенциал их роста.
-
-
-
-<br><li>Потенциал роста бизнеса
-
-                  </li>Понять, насколько бизнес компании успешно идет, можно из отчетности. А еще — из стратегии компании. Это планы компании на ближайший год, а также три, пять или сколько угодно лет. </ul>
-
-.&nbsp;</span>
-          </p>
-        </div>
-      </div>
-    </section>
-
-
-    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-1bd8"><div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1">Любите себя и своих родных, а мы займемся Вашими инвестициями!Улабайтесь чаще!</p>
-      </div></footer>
-    <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
-        <span>Улабайтесь чаще!</span>
-      </a>
-      <p class="u-text">
-        <span></span>
-      </p>
-      <a class="u-link" href="" target="_blank">
-        <span></span>
-      </a>.
-    </section>
 </body>
 </html>
-
